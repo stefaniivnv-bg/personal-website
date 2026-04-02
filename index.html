@@ -191,15 +191,19 @@
             </div>
           </div>
         </div>
-        <form class="contact-form" id="contactForm">
+        <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="46c38d00-c82c-4d35-a7c3-bcf6ed712e5c">
+          <input type="hidden" name="subject" value="New message from your portfolio website">
+          <input type="hidden" name="redirect" value="https://web3forms.com/success">
+          <input type="checkbox" name="botcheck" class="hidden" style="display:none">
           <div class="form-group">
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="text" name="name" placeholder="Your Name" required>
           </div>
           <div class="form-group">
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <input type="email" name="email" placeholder="Your Email" required>
           </div>
           <div class="form-group">
-            <textarea id="message" name="message" placeholder="Tell me about your project..." rows="5" required></textarea>
+            <textarea name="message" placeholder="Tell me about your project..." rows="5" required></textarea>
           </div>
           <button type="submit" class="btn btn-primary btn-full">Send Message</button>
         </form>
